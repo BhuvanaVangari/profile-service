@@ -26,7 +26,7 @@ public class Profile {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "profile_seq")
 	
-	@GenericGenerator(name = "profile_seq", strategy = "com.dnb.DevConnector.utils.CustomIdGenerator",
+	@GenericGenerator(name = "profile_seq", strategy = "com.dnb.profileservice.utils.CustomIdGenerator",
 	parameters =  {@Parameter(name=CustomIdGenerator.INCREMENT_PARAM,value="50"),
 			@Parameter(name=CustomIdGenerator.FLAG_PARAMETER,value="false"),
 			@Parameter(name=CustomIdGenerator.VALUE_PREFIX_PARAMETER,value="Pro_"),
